@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common" >
+
+    <include layout="@layout/toolbar" />
+
+    <!--/ -> /-->
+    <LinearLayout
+        android:id="@+id/LIN1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <TextView
+            android:id="@+id/substance1"
+            android:hint="substance1"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.5dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="+"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.9dp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/substance2"
+            android:hint="substance2"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.6dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="-->"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.6dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--/ = /-->
+    <LinearLayout
+        android:id="@+id/LIN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LIN1"
+        app:layout_constraintEnd_toEndOf="parent" >
+        <TextView
+            android:id="@+id/substance3"
+            android:hint="substance3"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.5dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="+"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.9dp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/substance4"
+            android:hint="substance4"
+            android:textColor="@color/blue"
+            android:textSize="30dp"
+            android:width="0.6dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EditSubstance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ВВЕДИТЕ ВЕЩЕСТВО"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/LIN2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnSubstance"
+        android:hint="РАССЧИТАТЬ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditSubstance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

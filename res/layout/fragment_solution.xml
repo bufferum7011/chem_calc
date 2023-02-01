@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!--Solution-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    style="@style/size"
+    android:background="@color/common" >
+
+    <include layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <!--Концентрация-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="W%(необходимая) = "
+                android:textAlignment="center"
+                android:textColor="@color/malachite"
+                android:textSize="17dp"
+                android:translationY="20dp" />
+            <EditText
+                android:id="@+id/editW"
+                android:layout_weight="0.7"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!--Объем-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:translationY="20dp"
+                android:text="V(необходимый объем)"
+                android:textColor="@color/malachite"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editV"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <!--Плотность-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:text="q(плотность) = "
+                android:layout_weight="0.3"
+                android:translationY="20dp"
+                android:textColor="@color/malachite"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editQ"
+                android:textColor="@color/blue"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <!--MACCA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnAnswer"
+                android:text="РАСЧИТАТЬ"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4" />
+            <TextView
+                android:text="m(навески) = "
+                android:layout_weight="0.3"
+                android:translationY="20dp"
+                android:textColor="@color/red"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/answerMass"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.375"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/answerSolution"
+            android:textSize="17dp"
+            android:textColor="@color/malachite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

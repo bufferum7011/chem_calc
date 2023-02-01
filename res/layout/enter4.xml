@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enter4"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/table" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Element1"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="index1"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Element2"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="index2"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Element3"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="index3"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Element4"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+
+        <EditText
+            android:id="@+id/edit8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="index4"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

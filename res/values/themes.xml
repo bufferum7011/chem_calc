@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+    <style name="solarStyle" parent="Theme.AppCompat.Light.NoActionBar" >
+<!--        parent="Theme.MaterialComponents.DayNight.NoActionBar"-->
+        <item name="colorPrimary">@color/common</item>
+<!--        <item name="colorOnPrimary">@color/common</item>-->
+<!--        <item name="colorPrimaryVariant">@color/common</item>-->
+
+<!--        <item name="colorOnSecondary">@color/malachite</item>-->
+<!--        <item name="colorSecondary">@color/malachite</item>-->
+<!--        <item name="colorSecondaryVariant">@color/malachite</item>-->
+
+        <item name="android:textColor">@color/common2</item>
+        <item name="android:textColorHint">@color/blue</item>
+        <item name="font">@font/comfortaa_bold</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    <style name="size" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="size2" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

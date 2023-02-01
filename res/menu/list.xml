@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/Solving_chem_equ"
+            android:title="@string/Solving_Chem_Equ" />
+        <item
+            android:id="@+id/Camera"
+            android:title="@string/Camera" />
+        <item
+            android:id="@+id/Molar_Weight"
+            android:title="@string/Molar_Weight" />
+        <item
+            android:id="@+id/Solution"
+            android:title="@string/Solution" />
+        <item
+            android:id="@+id/EnterSubstance"
+            android:title="EnterSubstance" />
+        <item
+            android:id="@+id/OVR"
+            android:title="@string/OVR" />
+        <item
+            android:id="@+id/Elec_Config_El"
+            android:title="@string/Elec_Config_El" />
+        <item
+            android:id="@+id/Hydrolysis"
+            android:title="@string/Hydrolysis" />
+        <item
+            android:id="@+id/Chem_Equ"
+            android:title="@string/Chem_Equ" />
+        <item
+            android:id="@+id/Reaction_Exchange_inSolution_Elec"
+            android:title="@string/Reaction_Exchange_inSolution_Elec" />
+        <item
+            android:id="@+id/Theory"
+            android:title="@string/Theory" />
+        <item android:title="others">
+            <menu>
+                <item
+                    android:id="@+id/Setting"
+                    android:title="@string/Setting" />
+                <item
+                    android:id="@+id/Support"
+                    android:title="@string/Support" />
+                <item
+                    android:id="@+id/About"
+                    android:title="@string/About" />
+            </menu>
+        </item>
+    </group>
+</menu>

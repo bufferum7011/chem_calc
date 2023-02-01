@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/Solving_chem_equ" >
+
+    <!--Camera-->
+    <fragment
+        android:id="@+id/Camera"
+        android:name="com.gen_5_new.Fragment.Cam"
+        android:label="@string/Camera"
+        tools:layout="@layout/fragment_camera" />
+    <!--Solving-->
+    <fragment
+        android:id="@+id/Solving_chem_equ"
+        android:name="com.gen_5_new.Fragment.Solving_chem_equ"
+        android:label="@string/Solving_Chem_Equ"
+        tools:layout="@layout/fragment_solving_chem_equ" />
+    <!--Camera-->
+    <fragment
+        android:id="@+id/EnterSubstance"
+        android:name="com.gen_5_new.Fragment.EnterSubstance"
+        android:label="@string/Camera"
+        tools:layout="@layout/enter_substance" />
+    <!--Solution-->
+    <fragment
+        android:id="@+id/Solution"
+        android:name="com.gen_5_new.Fragment.Solution"
+        android:label="@string/Camera"
+        tools:layout="@layout/fragment_solution" />
+    <!--Theory-->
+    <fragment
+        android:id="@+id/Theory"
+        android:name="com.gen_5_new.Fragment.Theory"
+        android:label="@string/Theory"
+        tools:layout="@layout/fragment_theory" />
+    <!--About-->
+    <fragment
+        android:id="@+id/About"
+        android:name="com.gen_5_new.Fragment.About"
+        android:label="@string/About"
+        tools:layout="@layout/fragment_about" />
+    <!--Molar_Weight-->
+    <fragment
+        android:id="@+id/Molar_Weight"
+        android:name="com.gen_5_new.Fragment.Molar_Weight"
+        android:label="@string/Molar_Weight"
+        tools:layout="@layout/fragment_molar_weight" />
+    <!--Hydrolysis-->
+    <fragment
+        android:id="@+id/Hydrolysis"
+        android:name="com.gen_5_new.Fragment.Hydrolysis"
+        android:label="@string/Hydrolysis"
+        tools:layout="@layout/fragment_hydrolysis" />
+</navigation>

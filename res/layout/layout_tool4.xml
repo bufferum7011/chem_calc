@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutTool4"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/enter4" >
+
+    <Button
+        android:id="@+id/enter44"
+        style="@style/size"
+        android:hint="@string/enter"
+        android:textColorHint="@color/blue" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner4"-->
+<!--        android:entries="@array/spinner"-->
+<!--        style="@style/size" />-->
+</LinearLayout>

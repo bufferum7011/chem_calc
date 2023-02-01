@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--Solving_chem_equ-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/size2"
+    tools:context=".Fragment.Solving_chem_equ"
+    android:id="@+id/Solving_chem_equ"
+    android:background="@color/common" >
+    <include
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+    <include
+        layout="@layout/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <include
+        layout="@layout/enter4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/table" />
+    <include
+        layout="@layout/layout_tool4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter4" />
+    <TextView
+        android:id="@+id/resultS"
+        style="@style/size"
+        android:background="@color/white"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTool4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
